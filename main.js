@@ -300,6 +300,18 @@ let main =  {
         document.getElementById(id).innerHTML = main.pieces[gamePiece].img
       }
       console.log("Images loaded")
+    },
+    movement: function(selectedPiece){
+      let x = main.pieces[selectedPiece].xPosition
+      let y = main.pieces[selectedPiece].yPosition
+      let options = []
+
+      switch(main.pieces[selectedPiece].type) {
+        case 'w_king':
+          break
+        case 'w_queen':
+          break
+      }
     }
   }
 }
